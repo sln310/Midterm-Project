@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class main {
 
-    public static void main(String[] args) {
-
+    public static void main (String[] args) {
+        
         try (Scanner input = new Scanner(System.in)) {
 
             //assumption that a user has already been created
@@ -38,6 +38,7 @@ public class main {
             //call show menu
             account.showMenu();
             // clrscr();
+            input.close();
 
         }
     }

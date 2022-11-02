@@ -7,6 +7,7 @@ public class Account {
     private String customerName;
     private String customerPassword;
     private double weight;
+    // Scanner in = new Scanner(System.in);
 
 
 public double getBmi() {
@@ -98,11 +99,11 @@ void BMIcalculator(){
 }
 
 void Reset(){
-    System.out.println("Are you sure you want to delite today's data? Type [yes/no]");
+    System.out.println("Are you sure you want to reset today's data? Type [yes/no]");
     Scanner scan = new Scanner(System.in);
     String answer = scan.next();
     if (answer.equals("yes")) {
-    System.out.println("Today's data is canceled successfully.\n");
+    System.out.println("Today's data is reset successfully.\n");
     System.out.println( "Exit");
     
     setWeight(0);
@@ -156,7 +157,7 @@ void showMenu(){
                 System.out.println(today);
                 BMIcalculator();
                     break;
-             
+
                 case 'b':
                 System.out.println("-------------------------------");
                 System.out.println("Reference");
@@ -168,7 +169,6 @@ void showMenu(){
                 System.out.println();
                 System.out.println( "Exit");
                     break;
-
 
                 case 'c':
                 Reset();
@@ -200,7 +200,6 @@ public void setBmi(double bmi) {
 public void setWeight(double weight) {
     this.weight = weight;
 }
-
 
 
 }
